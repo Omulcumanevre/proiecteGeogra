@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="description" content="Aici merg proiectele pentru georgrafie si alte materii pentru ca nu merg pe Clastoom">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>Proiecte</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <button class="tablink" onclick="openPage('acasa', this, ' rgb(102, 70, 70)')" id="defaultOpen">Acasa</button>
+        <button class="tablink" onclick="openPage('vegegh', this, 'mediumseagreen')" >Vegetatia Din Ghiroda</button>
+        <button class="tablink" onclick="openPage('nori', this, 'darkgray')">Norii</button>
+        <button class="tablink" onclick="openPage('urmeaza', this, ' rgb(14, 2, 192)')">Urmeaza</button>
+        
+        <div id="acasa" class="tabcontent">
+          <h3 style="padding-left: 30px;"><u><b>Problema</b></u></h3>
+          <p style="padding-left: 50px;">Habar nu am de ce. dar Gulugulu Clasrum nu ma lasa sa postez nimic la nici-o materie, la nici-o tema</p>
+          <h4 style="padding-left: 30px;"><u><b>Solutie</b></u></h4>
+          <p style="padding-left: 50px;">Am facut un site pe care deocamdata postez proiectele la geogra :)     (intr-a zecea nu stiu ce fac)</p>
+          <img class="homster" src="desene/hamster.jpg" alt="homster" width="300" height="250">
+        </div>
+        
+        <div id="vegegh" class="tabcontent">
+          <h3 style="padding-left: 30px;"><u><b>Vegetatia Din Ghiroda</b></u></h3>
+          <p style="padding-left: 30px;">Proiectul pentru vegetatia din cartierul meu</p>
+          <a href="site proiect geogra/VegetatiaDinGhiroda.pptx" download>Aici instalati proiectul, dati un click, va rog</a>
+          <h4 style="padding-left: 30px;"><u><i><b>Acest proiect a fost notat si poate fi arhivat</b></i></u></h4>
+          <img class="giarmata" src="desene/giarmata.jpg" width="225" height="175">
+        </div>
+        
+        <div id="nori" class="tabcontent">
+          <h3 style="padding-left: 30px;"><u><b>Asta e proiectul cu norii, mai jos o sa pun pozele</b></u></h3>
+          <p style="padding-left: 30px;">Am adaugat o poza fara nori ca sa demonstrez cat de unici sunt norii</p>
+          <img class="nor"  src="desene/nori1.jpg" height="350"  width="300" alt="nor1">
+          <img class="nor" src="desene/nori2.jpg" height="350" width="300" alt="nor2">
+          <img class="nor" src="desene/nori3.jpg" height="350" width="300" alt="nor3">
+          <img class="nor" src="desene/nori4.jpg" height="350" width="300" alt="nor4">
+          <p style="padding-left: 30px;"> Nu mai stiu daca trebuia sa zic si ce tip de nori sunt, deci il las asa</p>
+        </div>
+        
+        <div id="urmeaza" class="tabcontent">
+          <h3 style="padding-left: 30px;"> OOhoo, ce faceti aicia, nu vedeti ca e inca in constructie aici?</h3>
+          <img class="santier" src="desene/santier.jpg" alt="santier" height="300" width="500">
+          <p style="padding-left: 50px; padding-top: 15px;">Incredibil, domle, nici nu mai poti sa faci pauza pana in septembrie sa vezi daca merge clasrumul atunci, ca imediat vin toti pe santier.</p>
+          <p style="padding-left: 50px;"> Doaaaamneeee, ce-i cu generatia asta, pe vremea mea, daca intram asa pe santier luam o lopata cu moloz dupa urechi</p>
+          <img class="constructor" src="desene/omuldinsantier.jpg" alt="maistor" height="300" width="500">
+        </div>
+        <script>
+              function openPage(pageName, elmnt, color) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+
+                tablinks = document.getElementsByClassName("tablink");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].style.backgroundColor = "";
+                }
+
+                document.getElementById(pageName).style.display = "block";
+
+                elmnt.style.backgroundColor = color;
+            }
+
+            document.getElementById("defaultOpen").click();
+        </script>
+    </body>
+</html>
